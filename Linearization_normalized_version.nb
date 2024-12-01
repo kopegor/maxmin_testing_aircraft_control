@@ -1,0 +1,1154 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     46426,       1146]
+NotebookOptionsPosition[     44806,       1109]
+NotebookOutlinePosition[     45211,       1125]
+CellTagsIndexPosition[     45168,       1122]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Series", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"-", 
+     RowBox[{"Sin", "[", "Theta", " ", "]"}]}], " ", "+", " ", 
+    RowBox[{"P", "*", 
+     RowBox[{"Cos", "[", "alpha", "]"}]}], " ", "-", " ", 
+    RowBox[{"0.5", "*", "h", "*", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"v", " ", "+", " ", "dv"}], ")"}], "^", "2"}], "*", 
+     RowBox[{"(", 
+      RowBox[{"cx0", " ", "+", " ", 
+       RowBox[{"B", "*", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"cy0", " ", "+", " ", 
+           RowBox[{"cya", "*", 
+            RowBox[{"(", 
+             RowBox[{"alpha", " ", "+", " ", "dalpha"}], ")"}]}]}], ")"}], 
+         "^", "2"}]}]}], ")"}]}]}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"Theta", ",", " ", "Theta0", ",", " ", "1"}], "}"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"alpha", ",", " ", "alpha0", ",", " ", "1"}], "}"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"P", ",", " ", "P0", ",", " ", "1"}], "}"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"v", ",", " ", "v0", ",", " ", "1"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.919920118315096*^9, 3.919920153697607*^9}, {
+  3.919920207053992*^9, 3.919920379444671*^9}, {3.919920434553768*^9, 
+  3.919920438811058*^9}, {3.9199204873876934`*^9, 3.919920534967581*^9}, {
+  3.9199205897309704`*^9, 3.919920764049244*^9}, {3.923990242895689*^9, 
+  3.923990261258221*^9}, {3.923994364494412*^9, 3.923994365379463*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"d6c30c76-cc9b-6d41-8080-0ceff8a629a2"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"(", 
+    InterpretationBox[
+     RowBox[{
+      RowBox[{"(", 
+       InterpretationBox[
+        RowBox[{
+         RowBox[{"(", 
+          InterpretationBox[
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"-", "0.5`"}], " ", 
+               RowBox[{"(", 
+                RowBox[{"cx0", "+", 
+                 RowBox[{"B", " ", 
+                  SuperscriptBox[
+                   RowBox[{"(", 
+                    RowBox[{"cy0", "+", 
+                    RowBox[{"cya", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"alpha0", "+", "dalpha"}], ")"}]}]}], ")"}], 
+                   "2"]}]}], ")"}], " ", "h", " ", 
+               SuperscriptBox[
+                RowBox[{"(", 
+                 RowBox[{"dv", "+", "v0"}], ")"}], "2"]}], "+", 
+              RowBox[{"P0", " ", 
+               RowBox[{"Cos", "[", "alpha0", "]"}]}], "-", 
+              RowBox[{"Sin", "[", "Theta0", "]"}]}], ")"}], "-", 
+            RowBox[{"1.`", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{"cx0", "+", 
+                 RowBox[{"B", " ", 
+                  SuperscriptBox[
+                   RowBox[{"(", 
+                    RowBox[{"cy0", "+", 
+                    RowBox[{"cya", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"alpha0", "+", "dalpha"}], ")"}]}]}], ")"}], 
+                   "2"]}]}], ")"}], " ", "h", " ", 
+               RowBox[{"(", 
+                RowBox[{"dv", "+", "v0"}], ")"}]}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{"v", "-", "v0"}], ")"}]}], "+", 
+            InterpretationBox[
+             SuperscriptBox[
+              RowBox[{"O", "[", 
+               RowBox[{"v", "-", "v0"}], "]"}], "2"],
+             SeriesData[$CellContext`v, $CellContext`v0, {}, 0, 2, 1],
+             Editable->False]}],
+           
+           SeriesData[$CellContext`v, $CellContext`v0, {(-0.5) \
+($CellContext`cx0 + $CellContext`B ($CellContext`cy0 + $CellContext`cya \
+($CellContext`alpha0 + $CellContext`dalpha))^2) $CellContext`h \
+($CellContext`dv + $CellContext`v0)^2 + $CellContext`P0 
+              Cos[$CellContext`alpha0] - 
+             Sin[$CellContext`Theta0], -($CellContext`cx0 + $CellContext`B \
+($CellContext`cy0 + $CellContext`cya ($CellContext`alpha0 + \
+$CellContext`dalpha))^2) $CellContext`h ($CellContext`dv + $CellContext`v0)}, 
+            0, 2, 1],
+           Editable->False], ")"}], "+", 
+         RowBox[{
+          RowBox[{"Cos", "[", "alpha0", "]"}], " ", 
+          RowBox[{"(", 
+           RowBox[{"P", "-", "P0"}], ")"}]}], "+", 
+         InterpretationBox[
+          SuperscriptBox[
+           RowBox[{"O", "[", 
+            RowBox[{"P", "-", "P0"}], "]"}], "2"],
+          SeriesData[$CellContext`P, $CellContext`P0, {}, 0, 2, 1],
+          Editable->False]}],
+        SeriesData[$CellContext`P, $CellContext`P0, {
+          
+          SeriesData[$CellContext`v, $CellContext`v0, {(-0.5) \
+($CellContext`cx0 + $CellContext`B ($CellContext`cy0 + $CellContext`cya \
+($CellContext`alpha0 + $CellContext`dalpha))^2) $CellContext`h \
+($CellContext`dv + $CellContext`v0)^2 + $CellContext`P0 
+             Cos[$CellContext`alpha0] - 
+            Sin[$CellContext`Theta0], -($CellContext`cx0 + $CellContext`B \
+($CellContext`cy0 + $CellContext`cya ($CellContext`alpha0 + \
+$CellContext`dalpha))^2) $CellContext`h ($CellContext`dv + $CellContext`v0)}, 
+           0, 2, 1], 
+          Cos[$CellContext`alpha0]}, 0, 2, 1],
+        Editable->False], ")"}], "+", 
+      RowBox[{
+       RowBox[{"(", 
+        InterpretationBox[
+         RowBox[{
+          RowBox[{"(", 
+           InterpretationBox[
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"-", "1.`"}], " ", "B", " ", "cya", " ", 
+                RowBox[{"(", 
+                 RowBox[{"cy0", "+", 
+                  RowBox[{"cya", " ", 
+                   RowBox[{"(", 
+                    RowBox[{"alpha0", "+", "dalpha"}], ")"}]}]}], ")"}], " ", 
+                "h", " ", 
+                SuperscriptBox[
+                 RowBox[{"(", 
+                  RowBox[{"dv", "+", "v0"}], ")"}], "2"]}], "-", 
+               RowBox[{"P0", " ", 
+                RowBox[{"Sin", "[", "alpha0", "]"}]}]}], ")"}], "-", 
+             RowBox[{"2.`", " ", 
+              RowBox[{"(", 
+               RowBox[{"B", " ", "cya", " ", 
+                RowBox[{"(", 
+                 RowBox[{"cy0", "+", 
+                  RowBox[{"cya", " ", 
+                   RowBox[{"(", 
+                    RowBox[{"alpha0", "+", "dalpha"}], ")"}]}]}], ")"}], " ", 
+                "h", " ", 
+                RowBox[{"(", 
+                 RowBox[{"dv", "+", "v0"}], ")"}]}], ")"}], " ", 
+              RowBox[{"(", 
+               RowBox[{"v", "-", "v0"}], ")"}]}], "+", 
+             InterpretationBox[
+              SuperscriptBox[
+               RowBox[{"O", "[", 
+                RowBox[{"v", "-", "v0"}], "]"}], "2"],
+              SeriesData[$CellContext`v, $CellContext`v0, {}, 0, 2, 1],
+              Editable->False]}],
+            
+            SeriesData[$CellContext`v, $CellContext`v0, {-$CellContext`B \
+$CellContext`cya ($CellContext`cy0 + $CellContext`cya ($CellContext`alpha0 + \
+$CellContext`dalpha)) $CellContext`h ($CellContext`dv + $CellContext`v0)^2 - \
+$CellContext`P0 
+              Sin[$CellContext`alpha0], (-2.) $CellContext`B $CellContext`cya \
+($CellContext`cy0 + $CellContext`cya ($CellContext`alpha0 + \
+$CellContext`dalpha)) $CellContext`h ($CellContext`dv + $CellContext`v0)}, 0, 
+             2, 1],
+            Editable->False], ")"}], "-", 
+          RowBox[{
+           RowBox[{"Sin", "[", "alpha0", "]"}], " ", 
+           RowBox[{"(", 
+            RowBox[{"P", "-", "P0"}], ")"}]}], "+", 
+          InterpretationBox[
+           SuperscriptBox[
+            RowBox[{"O", "[", 
+             RowBox[{"P", "-", "P0"}], "]"}], "2"],
+           SeriesData[$CellContext`P, $CellContext`P0, {}, 0, 2, 1],
+           Editable->False]}],
+         SeriesData[$CellContext`P, $CellContext`P0, {
+           
+           SeriesData[$CellContext`v, $CellContext`v0, {-$CellContext`B \
+$CellContext`cya ($CellContext`cy0 + $CellContext`cya ($CellContext`alpha0 + \
+$CellContext`dalpha)) $CellContext`h ($CellContext`dv + $CellContext`v0)^2 - \
+$CellContext`P0 
+             Sin[$CellContext`alpha0], (-2.) $CellContext`B $CellContext`cya \
+($CellContext`cy0 + $CellContext`cya ($CellContext`alpha0 + \
+$CellContext`dalpha)) $CellContext`h ($CellContext`dv + $CellContext`v0)}, 0, 
+            2, 1], -Sin[$CellContext`alpha0]}, 0, 2, 1],
+         Editable->False], ")"}], " ", 
+       RowBox[{"(", 
+        RowBox[{"alpha", "-", "alpha0"}], ")"}]}], "+", 
+      InterpretationBox[
+       SuperscriptBox[
+        RowBox[{"O", "[", 
+         RowBox[{"alpha", "-", "alpha0"}], "]"}], "2"],
+       SeriesData[$CellContext`alpha, $CellContext`alpha0, {}, 0, 2, 1],
+       Editable->False]}],
+     SeriesData[$CellContext`alpha, $CellContext`alpha0, {
+       SeriesData[$CellContext`P, $CellContext`P0, {
+         SeriesData[$CellContext`v, $CellContext`v0, {(-0.5) \
+($CellContext`cx0 + $CellContext`B ($CellContext`cy0 + $CellContext`cya \
+($CellContext`alpha0 + $CellContext`dalpha))^2) $CellContext`h \
+($CellContext`dv + $CellContext`v0)^2 + $CellContext`P0 
+            Cos[$CellContext`alpha0] - 
+           Sin[$CellContext`Theta0], -($CellContext`cx0 + $CellContext`B \
+($CellContext`cy0 + $CellContext`cya ($CellContext`alpha0 + \
+$CellContext`dalpha))^2) $CellContext`h ($CellContext`dv + $CellContext`v0)}, 
+          0, 2, 1], 
+         Cos[$CellContext`alpha0]}, 0, 2, 1], 
+       SeriesData[$CellContext`P, $CellContext`P0, {
+         SeriesData[$CellContext`v, $CellContext`v0, {-$CellContext`B \
+$CellContext`cya ($CellContext`cy0 + $CellContext`cya ($CellContext`alpha0 + \
+$CellContext`dalpha)) $CellContext`h ($CellContext`dv + $CellContext`v0)^2 - \
+$CellContext`P0 
+           Sin[$CellContext`alpha0], (-2.) $CellContext`B $CellContext`cya \
+($CellContext`cy0 + $CellContext`cya ($CellContext`alpha0 + \
+$CellContext`dalpha)) $CellContext`h ($CellContext`dv + $CellContext`v0)}, 0, 
+          2, 1], -Sin[$CellContext`alpha0]}, 0, 2, 1]}, 0, 2, 1],
+     Editable->False], ")"}], "-", 
+   RowBox[{
+    RowBox[{"Cos", "[", "Theta0", "]"}], " ", 
+    RowBox[{"(", 
+     RowBox[{"Theta", "-", "Theta0"}], ")"}]}], "+", 
+   InterpretationBox[
+    SuperscriptBox[
+     RowBox[{"O", "[", 
+      RowBox[{"Theta", "-", "Theta0"}], "]"}], "2"],
+    SeriesData[$CellContext`Theta, $CellContext`Theta0, {}, 0, 2, 1],
+    Editable->False]}],
+  SeriesData[$CellContext`Theta, $CellContext`Theta0, {
+    SeriesData[$CellContext`alpha, $CellContext`alpha0, {
+      SeriesData[$CellContext`P, $CellContext`P0, {
+        SeriesData[$CellContext`v, $CellContext`v0, {(-0.5) ($CellContext`cx0 + \
+$CellContext`B ($CellContext`cy0 + $CellContext`cya ($CellContext`alpha0 + \
+$CellContext`dalpha))^2) $CellContext`h ($CellContext`dv + $CellContext`v0)^2 + \
+$CellContext`P0 Cos[$CellContext`alpha0] - 
+          Sin[$CellContext`Theta0], -($CellContext`cx0 + $CellContext`B \
+($CellContext`cy0 + $CellContext`cya ($CellContext`alpha0 + \
+$CellContext`dalpha))^2) $CellContext`h ($CellContext`dv + $CellContext`v0)}, 
+         0, 2, 1], 
+        Cos[$CellContext`alpha0]}, 0, 2, 1], 
+      SeriesData[$CellContext`P, $CellContext`P0, {
+        SeriesData[$CellContext`v, $CellContext`v0, {-$CellContext`B \
+$CellContext`cya ($CellContext`cy0 + $CellContext`cya ($CellContext`alpha0 + \
+$CellContext`dalpha)) $CellContext`h ($CellContext`dv + $CellContext`v0)^2 - \
+$CellContext`P0 
+          Sin[$CellContext`alpha0], (-2.) $CellContext`B $CellContext`cya \
+($CellContext`cy0 + $CellContext`cya ($CellContext`alpha0 + \
+$CellContext`dalpha)) $CellContext`h ($CellContext`dv + $CellContext`v0)}, 0, 
+         2, 1], -Sin[$CellContext`alpha0]}, 0, 2, 1]}, 0, 2, 1], -
+    Cos[$CellContext`Theta0]}, 0, 2, 1],
+  Editable->False]], "Output",
+ CellChangeTimes->{{3.919920526061409*^9, 3.919920535548519*^9}, 
+   3.919920765461981*^9, 3.919921628154351*^9, 3.919936424852255*^9, {
+   3.919940083675964*^9, 3.9199401007364*^9}, 3.9239903919067516`*^9, 
+   3.92399437261245*^9, 3.924074146862852*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"fdcea973-b095-c54d-ae93-4b44ac88b0e7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Normal", "[", "%1", "]"}]], "Input",
+ NumberMarks->False,
+ CellLabel->"In[2]:=",ExpressionUUID->"1b996910-e921-a94c-aa54-12b258d64c85"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"-", "0.5`"}], " ", 
+   RowBox[{"(", 
+    RowBox[{"cx0", "+", 
+     RowBox[{"B", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"cy0", "+", 
+         RowBox[{"cya", " ", 
+          RowBox[{"(", 
+           RowBox[{"alpha0", "+", "dalpha"}], ")"}]}]}], ")"}], "2"]}]}], 
+    ")"}], " ", "h", " ", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"-", "dv"}], "+", "v0"}], ")"}], "2"]}], "-", 
+  RowBox[{"0.5`", " ", 
+   RowBox[{"(", 
+    RowBox[{"cx0", "+", 
+     RowBox[{"B", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"cy0", "+", 
+         RowBox[{"cya", " ", 
+          RowBox[{"(", 
+           RowBox[{"alpha0", "+", "dalpha"}], ")"}]}]}], ")"}], "2"]}]}], 
+    ")"}], " ", "h", " ", 
+   RowBox[{"(", 
+    RowBox[{"v", "-", "v0"}], ")"}], " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", "2"}], " ", "dv"}], "+", 
+     RowBox[{"2", " ", "v0"}]}], ")"}]}], "+", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{"P", "-", "P0"}], ")"}], " ", 
+   RowBox[{"Cos", "[", "alpha0", "]"}]}], "+", 
+  RowBox[{"P0", " ", 
+   RowBox[{"Cos", "[", "alpha0", "]"}]}], "-", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{"Theta", "-", "Theta0"}], ")"}], " ", 
+   RowBox[{"Cos", "[", "Theta0", "]"}]}], "+", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{"alpha", "-", "alpha0"}], ")"}], " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"2.`", " ", "B", " ", "cya", " ", 
+      RowBox[{"(", 
+       RowBox[{"cy0", "+", 
+        RowBox[{"alpha0", " ", "cya"}], "+", 
+        RowBox[{"cya", " ", "dalpha"}]}], ")"}], " ", "h", " ", 
+      RowBox[{"(", 
+       RowBox[{"v", "-", "v0"}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{"dv", "-", 
+        RowBox[{"1.`", " ", "v0"}]}], ")"}]}], "-", 
+     RowBox[{"1.`", " ", "B", " ", "cya", " ", 
+      RowBox[{"(", 
+       RowBox[{"cy0", "+", 
+        RowBox[{"cya", " ", 
+         RowBox[{"(", 
+          RowBox[{"alpha0", "+", "dalpha"}], ")"}]}]}], ")"}], " ", "h", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", "dv"}], "+", "v0"}], ")"}], "2"]}], "-", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"P", "-", "P0"}], ")"}], " ", 
+      RowBox[{"Sin", "[", "alpha0", "]"}]}], "-", 
+     RowBox[{"P0", " ", 
+      RowBox[{"Sin", "[", "alpha0", "]"}]}]}], ")"}]}], "-", 
+  RowBox[{"Sin", "[", "Theta0", "]"}]}]], "Output",
+ CellChangeTimes->{3.9239904091383038`*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"bde2eb95-35f5-8144-8331-cde382457872"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Series", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"-", 
+      RowBox[{"Cos", "[", "Theta", " ", "]"}]}], "/", "v"}], "+", " ", 
+    RowBox[{"P", "*", 
+     RowBox[{
+      RowBox[{"Sin", "[", "alpha", "]"}], "/", "v"}]}], " ", "+", " ", 
+    RowBox[{"0.5", "*", "h", "*", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"v", " ", "+", " ", "dv"}], ")"}], "^", "2"}], "*", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"cy0", " ", "+", " ", 
+        RowBox[{"cya", "*", 
+         RowBox[{"(", 
+          RowBox[{"alpha", " ", "+", " ", "dalpha"}], ")"}]}]}], ")"}], " ", 
+      "/", " ", "v"}]}]}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"Theta", ",", " ", "Theta0", ",", " ", "1"}], "}"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"alpha", ",", " ", "alpha0", ",", " ", "1"}], "}"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"P", ",", " ", "P0", ",", " ", "1"}], "}"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"v", ",", " ", "v0", ",", " ", "1"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.919922246326304*^9, 3.919922303285385*^9}, {
+  3.923994332108996*^9, 3.923994380893328*^9}, {3.9240741855791416`*^9, 
+  3.9240741878643723`*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"c7b2eea1-0ceb-7845-bf04-7206b2a9d6b5"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"(", 
+    InterpretationBox[
+     RowBox[{
+      RowBox[{"(", 
+       InterpretationBox[
+        RowBox[{
+         RowBox[{"(", 
+          InterpretationBox[
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              FractionBox[
+               RowBox[{"0.5`", " ", 
+                RowBox[{"(", 
+                 RowBox[{"cy0", "+", 
+                  RowBox[{"cya", " ", 
+                   RowBox[{"(", 
+                    RowBox[{"alpha0", "+", "dalpha"}], ")"}]}]}], ")"}], " ", 
+                "h", " ", 
+                SuperscriptBox[
+                 RowBox[{"(", 
+                  RowBox[{"dv", "+", "v0"}], ")"}], "2"]}], "v0"], "-", 
+              FractionBox[
+               RowBox[{"Cos", "[", "Theta0", "]"}], "v0"], "+", 
+              FractionBox[
+               RowBox[{"P0", " ", 
+                RowBox[{"Sin", "[", "alpha0", "]"}]}], "v0"]}], ")"}], "+", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+               FractionBox[
+                RowBox[{"0.5`", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"cy0", "+", 
+                   RowBox[{"alpha0", " ", "cya"}], "+", 
+                   RowBox[{"cya", " ", "dalpha"}]}], ")"}], " ", "h", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{"-", "1.`"}], " ", "dv"}], "+", "v0"}], ")"}], 
+                 " ", 
+                 RowBox[{"(", 
+                  RowBox[{"dv", "+", "v0"}], ")"}]}], 
+                SuperscriptBox["v0", "2"]], "+", 
+               FractionBox[
+                RowBox[{"Cos", "[", "Theta0", "]"}], 
+                SuperscriptBox["v0", "2"]], "-", 
+               FractionBox[
+                RowBox[{"P0", " ", 
+                 RowBox[{"Sin", "[", "alpha0", "]"}]}], 
+                SuperscriptBox["v0", "2"]]}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{"v", "-", "v0"}], ")"}]}], "+", 
+            InterpretationBox[
+             SuperscriptBox[
+              RowBox[{"O", "[", 
+               RowBox[{"v", "-", "v0"}], "]"}], "2"],
+             SeriesData[$CellContext`v, $CellContext`v0, {}, 0, 2, 1],
+             Editable->False]}],
+           
+           SeriesData[$CellContext`v, $CellContext`v0, {
+            0.5 ($CellContext`cy0 + $CellContext`cya ($CellContext`alpha0 + \
+$CellContext`dalpha)) $CellContext`h $CellContext`v0^(-1) ($CellContext`dv + \
+$CellContext`v0)^2 - $CellContext`v0^(-1) 
+             Cos[$CellContext`Theta0] + $CellContext`P0 $CellContext`v0^(-1) 
+              Sin[$CellContext`alpha0], 
+             0.5 ($CellContext`cy0 + $CellContext`alpha0 $CellContext`cya + \
+$CellContext`cya $CellContext`dalpha) $CellContext`h $CellContext`v0^(-2) \
+(-$CellContext`dv + $CellContext`v0) ($CellContext`dv + $CellContext`v0) + \
+$CellContext`v0^(-2) 
+              Cos[$CellContext`Theta0] - $CellContext`P0 $CellContext`v0^(-2) 
+             Sin[$CellContext`alpha0]}, 0, 2, 1],
+           Editable->False], ")"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           InterpretationBox[
+            RowBox[{
+             FractionBox[
+              RowBox[{"Sin", "[", "alpha0", "]"}], "v0"], "-", 
+             FractionBox[
+              RowBox[{
+               RowBox[{"Sin", "[", "alpha0", "]"}], " ", 
+               RowBox[{"(", 
+                RowBox[{"v", "-", "v0"}], ")"}]}], 
+              SuperscriptBox["v0", "2"]], "+", 
+             InterpretationBox[
+              SuperscriptBox[
+               RowBox[{"O", "[", 
+                RowBox[{"v", "-", "v0"}], "]"}], "2"],
+              SeriesData[$CellContext`v, $CellContext`v0, {}, 0, 2, 1],
+              Editable->False]}],
+            
+            SeriesData[$CellContext`v, $CellContext`v0, {$CellContext`v0^(-1) 
+              Sin[$CellContext`alpha0], -$CellContext`v0^(-2) 
+              Sin[$CellContext`alpha0]}, 0, 2, 1],
+            Editable->False], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{"P", "-", "P0"}], ")"}]}], "+", 
+         InterpretationBox[
+          SuperscriptBox[
+           RowBox[{"O", "[", 
+            RowBox[{"P", "-", "P0"}], "]"}], "2"],
+          SeriesData[$CellContext`P, $CellContext`P0, {}, 0, 2, 1],
+          Editable->False]}],
+        SeriesData[$CellContext`P, $CellContext`P0, {
+          
+          SeriesData[$CellContext`v, $CellContext`v0, {
+           0.5 ($CellContext`cy0 + $CellContext`cya ($CellContext`alpha0 + \
+$CellContext`dalpha)) $CellContext`h $CellContext`v0^(-1) ($CellContext`dv + \
+$CellContext`v0)^2 - $CellContext`v0^(-1) 
+            Cos[$CellContext`Theta0] + $CellContext`P0 $CellContext`v0^(-1) 
+             Sin[$CellContext`alpha0], 
+            0.5 ($CellContext`cy0 + $CellContext`alpha0 $CellContext`cya + \
+$CellContext`cya $CellContext`dalpha) $CellContext`h $CellContext`v0^(-2) \
+(-$CellContext`dv + $CellContext`v0) ($CellContext`dv + $CellContext`v0) + \
+$CellContext`v0^(-2) 
+             Cos[$CellContext`Theta0] - $CellContext`P0 $CellContext`v0^(-2) 
+            Sin[$CellContext`alpha0]}, 0, 2, 1], 
+          
+          SeriesData[$CellContext`v, $CellContext`v0, {$CellContext`v0^(-1) 
+            Sin[$CellContext`alpha0], -$CellContext`v0^(-2) 
+            Sin[$CellContext`alpha0]}, 0, 2, 1]}, 0, 2, 1],
+        Editable->False], ")"}], "+", 
+      RowBox[{
+       RowBox[{"(", 
+        InterpretationBox[
+         RowBox[{
+          RowBox[{"(", 
+           InterpretationBox[
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+               FractionBox[
+                RowBox[{"0.5`", " ", "cya", " ", "h", " ", 
+                 SuperscriptBox[
+                  RowBox[{"(", 
+                   RowBox[{"dv", "+", "v0"}], ")"}], "2"]}], "v0"], "+", 
+               FractionBox[
+                RowBox[{"P0", " ", 
+                 RowBox[{"Cos", "[", "alpha0", "]"}]}], "v0"]}], ")"}], "+", 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{
+                FractionBox[
+                 RowBox[{"0.5`", " ", "cya", " ", "h", " ", 
+                  RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], " ", "dv"}], "+", "v0"}], ")"}], 
+                  " ", 
+                  RowBox[{"(", 
+                   RowBox[{"dv", "+", "v0"}], ")"}]}], 
+                 SuperscriptBox["v0", "2"]], "-", 
+                FractionBox[
+                 RowBox[{"P0", " ", 
+                  RowBox[{"Cos", "[", "alpha0", "]"}]}], 
+                 SuperscriptBox["v0", "2"]]}], ")"}], " ", 
+              RowBox[{"(", 
+               RowBox[{"v", "-", "v0"}], ")"}]}], "+", 
+             InterpretationBox[
+              SuperscriptBox[
+               RowBox[{"O", "[", 
+                RowBox[{"v", "-", "v0"}], "]"}], "2"],
+              SeriesData[$CellContext`v, $CellContext`v0, {}, 0, 2, 1],
+              Editable->False]}],
+            
+            SeriesData[$CellContext`v, $CellContext`v0, {
+             0.5 $CellContext`cya $CellContext`h $CellContext`v0^(-1) \
+($CellContext`dv + $CellContext`v0)^2 + $CellContext`P0 $CellContext`v0^(-1) 
+               Cos[$CellContext`alpha0], 
+              0.5 $CellContext`cya $CellContext`h $CellContext`v0^(-2) \
+(-$CellContext`dv + $CellContext`v0) ($CellContext`dv + $CellContext`v0) - \
+$CellContext`P0 $CellContext`v0^(-2) Cos[$CellContext`alpha0]}, 0, 2, 1],
+            Editable->False], ")"}], "+", 
+          RowBox[{
+           RowBox[{"(", 
+            InterpretationBox[
+             RowBox[{
+              FractionBox[
+               RowBox[{"Cos", "[", "alpha0", "]"}], "v0"], "-", 
+              FractionBox[
+               RowBox[{
+                RowBox[{"Cos", "[", "alpha0", "]"}], " ", 
+                RowBox[{"(", 
+                 RowBox[{"v", "-", "v0"}], ")"}]}], 
+               SuperscriptBox["v0", "2"]], "+", 
+              InterpretationBox[
+               SuperscriptBox[
+                RowBox[{"O", "[", 
+                 RowBox[{"v", "-", "v0"}], "]"}], "2"],
+               SeriesData[$CellContext`v, $CellContext`v0, {}, 0, 2, 1],
+               Editable->False]}],
+             
+             SeriesData[$CellContext`v, $CellContext`v0, {$CellContext`v0^(-1)
+                  Cos[$CellContext`alpha0], -$CellContext`v0^(-2) 
+               Cos[$CellContext`alpha0]}, 0, 2, 1],
+             Editable->False], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{"P", "-", "P0"}], ")"}]}], "+", 
+          InterpretationBox[
+           SuperscriptBox[
+            RowBox[{"O", "[", 
+             RowBox[{"P", "-", "P0"}], "]"}], "2"],
+           SeriesData[$CellContext`P, $CellContext`P0, {}, 0, 2, 1],
+           Editable->False]}],
+         SeriesData[$CellContext`P, $CellContext`P0, {
+           
+           SeriesData[$CellContext`v, $CellContext`v0, {
+            0.5 $CellContext`cya $CellContext`h $CellContext`v0^(-1) \
+($CellContext`dv + $CellContext`v0)^2 + $CellContext`P0 $CellContext`v0^(-1) 
+              Cos[$CellContext`alpha0], 
+             0.5 $CellContext`cya $CellContext`h $CellContext`v0^(-2) \
+(-$CellContext`dv + $CellContext`v0) ($CellContext`dv + $CellContext`v0) - \
+$CellContext`P0 $CellContext`v0^(-2) Cos[$CellContext`alpha0]}, 0, 2, 1], 
+           
+           SeriesData[$CellContext`v, $CellContext`v0, {$CellContext`v0^(-1) 
+             Cos[$CellContext`alpha0], -$CellContext`v0^(-2) 
+             Cos[$CellContext`alpha0]}, 0, 2, 1]}, 0, 2, 1],
+         Editable->False], ")"}], " ", 
+       RowBox[{"(", 
+        RowBox[{"alpha", "-", "alpha0"}], ")"}]}], "+", 
+      InterpretationBox[
+       SuperscriptBox[
+        RowBox[{"O", "[", 
+         RowBox[{"alpha", "-", "alpha0"}], "]"}], "2"],
+       SeriesData[$CellContext`alpha, $CellContext`alpha0, {}, 0, 2, 1],
+       Editable->False]}],
+     SeriesData[$CellContext`alpha, $CellContext`alpha0, {
+       SeriesData[$CellContext`P, $CellContext`P0, {
+         SeriesData[$CellContext`v, $CellContext`v0, {
+          0.5 ($CellContext`cy0 + $CellContext`cya ($CellContext`alpha0 + \
+$CellContext`dalpha)) $CellContext`h $CellContext`v0^(-1) ($CellContext`dv + \
+$CellContext`v0)^2 - $CellContext`v0^(-1) 
+           Cos[$CellContext`Theta0] + $CellContext`P0 $CellContext`v0^(-1) 
+            Sin[$CellContext`alpha0], 
+           0.5 ($CellContext`cy0 + $CellContext`alpha0 $CellContext`cya + \
+$CellContext`cya $CellContext`dalpha) $CellContext`h $CellContext`v0^(-2) \
+(-$CellContext`dv + $CellContext`v0) ($CellContext`dv + $CellContext`v0) + \
+$CellContext`v0^(-2) 
+            Cos[$CellContext`Theta0] - $CellContext`P0 $CellContext`v0^(-2) 
+           Sin[$CellContext`alpha0]}, 0, 2, 1], 
+         SeriesData[$CellContext`v, $CellContext`v0, {$CellContext`v0^(-1) 
+           Sin[$CellContext`alpha0], -$CellContext`v0^(-2) 
+           Sin[$CellContext`alpha0]}, 0, 2, 1]}, 0, 2, 1], 
+       SeriesData[$CellContext`P, $CellContext`P0, {
+         SeriesData[$CellContext`v, $CellContext`v0, {
+          0.5 $CellContext`cya $CellContext`h $CellContext`v0^(-1) \
+($CellContext`dv + $CellContext`v0)^2 + $CellContext`P0 $CellContext`v0^(-1) 
+            Cos[$CellContext`alpha0], 
+           0.5 $CellContext`cya $CellContext`h $CellContext`v0^(-2) \
+(-$CellContext`dv + $CellContext`v0) ($CellContext`dv + $CellContext`v0) - \
+$CellContext`P0 $CellContext`v0^(-2) Cos[$CellContext`alpha0]}, 0, 2, 1], 
+         SeriesData[$CellContext`v, $CellContext`v0, {$CellContext`v0^(-1) 
+           Cos[$CellContext`alpha0], -$CellContext`v0^(-2) 
+           Cos[$CellContext`alpha0]}, 0, 2, 1]}, 0, 2, 1]}, 0, 2, 1],
+     Editable->False], ")"}], "+", 
+   RowBox[{
+    RowBox[{"(", 
+     InterpretationBox[
+      RowBox[{
+       FractionBox[
+        RowBox[{"Sin", "[", "Theta0", "]"}], "v0"], "-", 
+       FractionBox[
+        RowBox[{
+         RowBox[{"Sin", "[", "Theta0", "]"}], " ", 
+         RowBox[{"(", 
+          RowBox[{"v", "-", "v0"}], ")"}]}], 
+        SuperscriptBox["v0", "2"]], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", 
+          RowBox[{"v", "-", "v0"}], "]"}], "2"],
+        SeriesData[$CellContext`v, $CellContext`v0, {}, 0, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`v, $CellContext`v0, {$CellContext`v0^(-1) 
+        Sin[$CellContext`Theta0], -$CellContext`v0^(-2) 
+        Sin[$CellContext`Theta0]}, 0, 2, 1],
+      Editable->False], ")"}], " ", 
+    RowBox[{"(", 
+     RowBox[{"Theta", "-", "Theta0"}], ")"}]}], "+", 
+   InterpretationBox[
+    SuperscriptBox[
+     RowBox[{"O", "[", 
+      RowBox[{"Theta", "-", "Theta0"}], "]"}], "2"],
+    SeriesData[$CellContext`Theta, $CellContext`Theta0, {}, 0, 2, 1],
+    Editable->False]}],
+  SeriesData[$CellContext`Theta, $CellContext`Theta0, {
+    SeriesData[$CellContext`alpha, $CellContext`alpha0, {
+      SeriesData[$CellContext`P, $CellContext`P0, {
+        SeriesData[$CellContext`v, $CellContext`v0, {
+         0.5 ($CellContext`cy0 + $CellContext`cya ($CellContext`alpha0 + \
+$CellContext`dalpha)) $CellContext`h $CellContext`v0^(-1) ($CellContext`dv + \
+$CellContext`v0)^2 - $CellContext`v0^(-1) 
+          Cos[$CellContext`Theta0] + $CellContext`P0 $CellContext`v0^(-1) 
+           Sin[$CellContext`alpha0], 
+          0.5 ($CellContext`cy0 + $CellContext`alpha0 $CellContext`cya + \
+$CellContext`cya $CellContext`dalpha) $CellContext`h $CellContext`v0^(-2) \
+(-$CellContext`dv + $CellContext`v0) ($CellContext`dv + $CellContext`v0) + \
+$CellContext`v0^(-2) 
+           Cos[$CellContext`Theta0] - $CellContext`P0 $CellContext`v0^(-2) 
+          Sin[$CellContext`alpha0]}, 0, 2, 1], 
+        SeriesData[$CellContext`v, $CellContext`v0, {$CellContext`v0^(-1) 
+          Sin[$CellContext`alpha0], -$CellContext`v0^(-2) 
+          Sin[$CellContext`alpha0]}, 0, 2, 1]}, 0, 2, 1], 
+      SeriesData[$CellContext`P, $CellContext`P0, {
+        SeriesData[$CellContext`v, $CellContext`v0, {
+         0.5 $CellContext`cya $CellContext`h $CellContext`v0^(-1) \
+($CellContext`dv + $CellContext`v0)^2 + $CellContext`P0 $CellContext`v0^(-1) 
+           Cos[$CellContext`alpha0], 
+          0.5 $CellContext`cya $CellContext`h $CellContext`v0^(-2) \
+(-$CellContext`dv + $CellContext`v0) ($CellContext`dv + $CellContext`v0) - \
+$CellContext`P0 $CellContext`v0^(-2) Cos[$CellContext`alpha0]}, 0, 2, 1], 
+        SeriesData[$CellContext`v, $CellContext`v0, {$CellContext`v0^(-1) 
+          Cos[$CellContext`alpha0], -$CellContext`v0^(-2) 
+          Cos[$CellContext`alpha0]}, 0, 2, 1]}, 0, 2, 1]}, 0, 2, 1], 
+    SeriesData[$CellContext`v, $CellContext`v0, {$CellContext`v0^(-1) 
+      Sin[$CellContext`Theta0], -$CellContext`v0^(-2) 
+      Sin[$CellContext`Theta0]}, 0, 2, 1]}, 0, 2, 1],
+  Editable->False]], "Output",
+ CellChangeTimes->{{3.919936260982977*^9, 3.919936287357212*^9}, 
+   3.919940161805063*^9, 3.923994400206539*^9, 3.9240742226270027`*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"0381458b-5f5e-f540-b105-f3211d0872d9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Normal", "[", "%2", "]"}]], "Input",
+ NumberMarks->False,
+ CellLabel->"In[3]:=",ExpressionUUID->"23bc6580-d55c-3e4a-aa00-5311a3d1c034"],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox[
+   RowBox[{"0.5`", " ", 
+    RowBox[{"(", 
+     RowBox[{"cy0", "+", 
+      RowBox[{"cya", " ", 
+       RowBox[{"(", 
+        RowBox[{"alpha0", "+", "dalpha"}], ")"}]}]}], ")"}], " ", "h", " ", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"dv", "+", "v0"}], ")"}], "2"]}], "v0"], "+", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{"alpha", "-", "alpha0"}], ")"}], " ", 
+   RowBox[{"(", 
+    RowBox[{
+     FractionBox[
+      RowBox[{"0.5`", " ", "cya", " ", "h", " ", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{"dv", "+", "v0"}], ")"}], "2"]}], "v0"], "+", 
+     FractionBox[
+      RowBox[{"P0", " ", 
+       RowBox[{"Cos", "[", "alpha0", "]"}]}], "v0"], "+", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"v", "-", "v0"}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         RowBox[{"0.5`", " ", "cya", " ", "h", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"-", "1.`"}], " ", "dv"}], "+", "v0"}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{"dv", "+", "v0"}], ")"}]}], 
+         SuperscriptBox["v0", "2"]], "-", 
+        FractionBox[
+         RowBox[{"P0", " ", 
+          RowBox[{"Cos", "[", "alpha0", "]"}]}], 
+         SuperscriptBox["v0", "2"]]}], ")"}]}], "+", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"P", "-", "P0"}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"v", "-", "v0"}], ")"}], " ", 
+           RowBox[{"Cos", "[", "alpha0", "]"}]}], 
+          SuperscriptBox["v0", "2"]]}], "+", 
+        FractionBox[
+         RowBox[{"Cos", "[", "alpha0", "]"}], "v0"]}], ")"}]}]}], ")"}]}], 
+  "-", 
+  FractionBox[
+   RowBox[{"Cos", "[", "Theta0", "]"}], "v0"], "+", 
+  FractionBox[
+   RowBox[{"P0", " ", 
+    RowBox[{"Sin", "[", "alpha0", "]"}]}], "v0"], "+", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{"v", "-", "v0"}], ")"}], " ", 
+   RowBox[{"(", 
+    RowBox[{
+     FractionBox[
+      RowBox[{"0.5`", " ", 
+       RowBox[{"(", 
+        RowBox[{"cy0", "+", 
+         RowBox[{"alpha0", " ", "cya"}], "+", 
+         RowBox[{"cya", " ", "dalpha"}]}], ")"}], " ", "h", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "1.`"}], " ", "dv"}], "+", "v0"}], ")"}], " ", 
+       RowBox[{"(", 
+        RowBox[{"dv", "+", "v0"}], ")"}]}], 
+      SuperscriptBox["v0", "2"]], "+", 
+     FractionBox[
+      RowBox[{"Cos", "[", "Theta0", "]"}], 
+      SuperscriptBox["v0", "2"]], "-", 
+     FractionBox[
+      RowBox[{"P0", " ", 
+       RowBox[{"Sin", "[", "alpha0", "]"}]}], 
+      SuperscriptBox["v0", "2"]]}], ")"}]}], "+", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{"P", "-", "P0"}], ")"}], " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"-", 
+      FractionBox[
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"v", "-", "v0"}], ")"}], " ", 
+        RowBox[{"Sin", "[", "alpha0", "]"}]}], 
+       SuperscriptBox["v0", "2"]]}], "+", 
+     FractionBox[
+      RowBox[{"Sin", "[", "alpha0", "]"}], "v0"]}], ")"}]}], "+", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{"Theta", "-", "Theta0"}], ")"}], " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"-", 
+      FractionBox[
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"v", "-", "v0"}], ")"}], " ", 
+        RowBox[{"Sin", "[", "Theta0", "]"}]}], 
+       SuperscriptBox["v0", "2"]]}], "+", 
+     FractionBox[
+      RowBox[{"Sin", "[", "Theta0", "]"}], "v0"]}], ")"}]}]}]], "Output",
+ CellChangeTimes->{3.9240742261248455`*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"9222e4af-06c4-ab4d-afe9-3e24b6d05c58"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Series", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"-", "0.5"}], "*", "q", "*", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"v", " ", "+", " ", "dv"}], ")"}], "^", "2"}], "*", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"mza", "*", 
+       RowBox[{"(", 
+        RowBox[{"alpha", "+", "dalpha"}], ")"}]}], "+", 
+      RowBox[{"mzs", "*", "sigma"}]}], ")"}]}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"v", ",", " ", "v0", ",", " ", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"alpha", ",", " ", "alpha0", ",", " ", "1"}], "}"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"sigma", ",", " ", "sigma0", ",", " ", "1"}], "}"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.919936521219221*^9, 3.9199365297683887`*^9}, {
+   3.919936600227688*^9, 3.9199367239930325`*^9}, 3.923994427427058*^9},
+ CellLabel->"In[4]:=",ExpressionUUID->"5703297a-1b60-7446-9d9b-c8cf24a9edff"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"(", 
+    InterpretationBox[
+     RowBox[{
+      RowBox[{"(", 
+       InterpretationBox[
+        RowBox[{
+         RowBox[{"-", 
+          RowBox[{"0.5`", " ", 
+           RowBox[{"(", 
+            RowBox[{"q", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"alpha0", "+", "dalpha"}], ")"}], " ", "mza"}], "+", 
+               RowBox[{"mzs", " ", "sigma0"}]}], ")"}], " ", 
+             SuperscriptBox[
+              RowBox[{"(", 
+               RowBox[{"dv", "+", "v0"}], ")"}], "2"]}], ")"}]}]}], "-", 
+         RowBox[{"0.5`", " ", 
+          RowBox[{"(", 
+           RowBox[{"mzs", " ", "q", " ", 
+            SuperscriptBox[
+             RowBox[{"(", 
+              RowBox[{"dv", "+", "v0"}], ")"}], "2"]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{"sigma", "-", "sigma0"}], ")"}]}], "+", 
+         InterpretationBox[
+          SuperscriptBox[
+           RowBox[{"O", "[", 
+            RowBox[{"sigma", "-", "sigma0"}], "]"}], "2"],
+          SeriesData[$CellContext`sigma, $CellContext`sigma0, {}, 0, 2, 1],
+          Editable->False]}],
+        SeriesData[$CellContext`sigma, $CellContext`sigma0, {(-0.5) \
+$CellContext`q (($CellContext`alpha0 + $CellContext`dalpha) $CellContext`mza + \
+$CellContext`mzs $CellContext`sigma0) ($CellContext`dv + $CellContext`v0)^2, \
+(-0.5) $CellContext`mzs $CellContext`q ($CellContext`dv + $CellContext`v0)^2},
+          0, 2, 1],
+        Editable->False], ")"}], "-", 
+      RowBox[{"0.5`", " ", 
+       RowBox[{"(", 
+        RowBox[{"mza", " ", "q", " ", 
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{"dv", "+", "v0"}], ")"}], "2"]}], ")"}], " ", 
+       RowBox[{"(", 
+        RowBox[{"alpha", "-", "alpha0"}], ")"}]}], "+", 
+      InterpretationBox[
+       SuperscriptBox[
+        RowBox[{"O", "[", 
+         RowBox[{"alpha", "-", "alpha0"}], "]"}], "2"],
+       SeriesData[$CellContext`alpha, $CellContext`alpha0, {}, 0, 2, 1],
+       Editable->False]}],
+     SeriesData[$CellContext`alpha, $CellContext`alpha0, {
+       SeriesData[$CellContext`sigma, $CellContext`sigma0, {(-0.5) \
+$CellContext`q (($CellContext`alpha0 + $CellContext`dalpha) $CellContext`mza + \
+$CellContext`mzs $CellContext`sigma0) ($CellContext`dv + $CellContext`v0)^2, \
+(-0.5) $CellContext`mzs $CellContext`q ($CellContext`dv + $CellContext`v0)^2},
+         0, 2, 1], (-0.5) $CellContext`mza $CellContext`q ($CellContext`dv + \
+$CellContext`v0)^2}, 0, 2, 1],
+     Editable->False], ")"}], "+", 
+   RowBox[{
+    RowBox[{"(", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{"(", 
+        InterpretationBox[
+         RowBox[{
+          RowBox[{"-", 
+           RowBox[{"1.`", " ", 
+            RowBox[{"(", 
+             RowBox[{"q", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"(", 
+                  RowBox[{"alpha0", "+", "dalpha"}], ")"}], " ", "mza"}], "+", 
+                RowBox[{"mzs", " ", "sigma0"}]}], ")"}], " ", 
+              RowBox[{"(", 
+               RowBox[{"dv", "+", "v0"}], ")"}]}], ")"}]}]}], "-", 
+          RowBox[{"1.`", " ", 
+           RowBox[{"(", 
+            RowBox[{"mzs", " ", "q", " ", 
+             RowBox[{"(", 
+              RowBox[{"dv", "+", "v0"}], ")"}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{"sigma", "-", "sigma0"}], ")"}]}], "+", 
+          InterpretationBox[
+           SuperscriptBox[
+            RowBox[{"O", "[", 
+             RowBox[{"sigma", "-", "sigma0"}], "]"}], "2"],
+           SeriesData[$CellContext`sigma, $CellContext`sigma0, {}, 0, 2, 1],
+           Editable->False]}],
+         SeriesData[$CellContext`sigma, $CellContext`sigma0, {-$CellContext`q \
+(($CellContext`alpha0 + $CellContext`dalpha) $CellContext`mza + \
+$CellContext`mzs $CellContext`sigma0) ($CellContext`dv + $CellContext`v0), \
+-$CellContext`mzs $CellContext`q ($CellContext`dv + $CellContext`v0)}, 0, 2, 
+          1],
+         Editable->False], ")"}], "-", 
+       RowBox[{"1.`", " ", 
+        RowBox[{"(", 
+         RowBox[{"mza", " ", "q", " ", 
+          RowBox[{"(", 
+           RowBox[{"dv", "+", "v0"}], ")"}]}], ")"}], " ", 
+        RowBox[{"(", 
+         RowBox[{"alpha", "-", "alpha0"}], ")"}]}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", 
+          RowBox[{"alpha", "-", "alpha0"}], "]"}], "2"],
+        SeriesData[$CellContext`alpha, $CellContext`alpha0, {}, 0, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`alpha, $CellContext`alpha0, {
+        SeriesData[$CellContext`sigma, $CellContext`sigma0, {-$CellContext`q \
+(($CellContext`alpha0 + $CellContext`dalpha) $CellContext`mza + \
+$CellContext`mzs $CellContext`sigma0) ($CellContext`dv + $CellContext`v0), \
+-$CellContext`mzs $CellContext`q ($CellContext`dv + $CellContext`v0)}, 0, 2, 
+         1], -$CellContext`mza $CellContext`q ($CellContext`dv + \
+$CellContext`v0)}, 0, 2, 1],
+      Editable->False], ")"}], " ", 
+    RowBox[{"(", 
+     RowBox[{"v", "-", "v0"}], ")"}]}], "+", 
+   InterpretationBox[
+    SuperscriptBox[
+     RowBox[{"O", "[", 
+      RowBox[{"v", "-", "v0"}], "]"}], "2"],
+    SeriesData[$CellContext`v, $CellContext`v0, {}, 0, 2, 1],
+    Editable->False]}],
+  SeriesData[$CellContext`v, $CellContext`v0, {
+    SeriesData[$CellContext`alpha, $CellContext`alpha0, {
+      SeriesData[$CellContext`sigma, $CellContext`sigma0, {(-0.5) \
+$CellContext`q (($CellContext`alpha0 + $CellContext`dalpha) $CellContext`mza + \
+$CellContext`mzs $CellContext`sigma0) ($CellContext`dv + $CellContext`v0)^2, \
+(-0.5) $CellContext`mzs $CellContext`q ($CellContext`dv + $CellContext`v0)^2},
+        0, 2, 1], (-0.5) $CellContext`mza $CellContext`q ($CellContext`dv + \
+$CellContext`v0)^2}, 0, 2, 1], 
+    SeriesData[$CellContext`alpha, $CellContext`alpha0, {
+      SeriesData[$CellContext`sigma, $CellContext`sigma0, {-$CellContext`q \
+(($CellContext`alpha0 + $CellContext`dalpha) $CellContext`mza + \
+$CellContext`mzs $CellContext`sigma0) ($CellContext`dv + $CellContext`v0), \
+-$CellContext`mzs $CellContext`q ($CellContext`dv + $CellContext`v0)}, 0, 2, 
+       1], -$CellContext`mza $CellContext`q ($CellContext`dv + \
+$CellContext`v0)}, 0, 2, 1]}, 0, 2, 1],
+  Editable->False]], "Output",
+ CellChangeTimes->{3.919936725289677*^9, 3.919940177541992*^9, 
+  3.923994440474156*^9, 3.9240742637732277`*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"6a613b9d-7b3f-4f49-9043-67c01117fa05"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Normal", "[", "%4", "]"}]], "Input",
+ NumberMarks->False,
+ CellLabel->"In[5]:=",ExpressionUUID->"6a85f126-dd0c-914a-9e75-c1c89c4b58ca"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"-", "0.5`"}], " ", 
+   RowBox[{"(", 
+    RowBox[{"alpha", "-", "alpha0"}], ")"}], " ", "mza", " ", "q", " ", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"dv", "+", "v0"}], ")"}], "2"]}], "-", 
+  RowBox[{"0.5`", " ", "mzs", " ", "q", " ", 
+   RowBox[{"(", 
+    RowBox[{"sigma", "-", "sigma0"}], ")"}], " ", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"dv", "+", "v0"}], ")"}], "2"]}], "-", 
+  RowBox[{"0.5`", " ", "q", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"alpha0", "+", "dalpha"}], ")"}], " ", "mza"}], "+", 
+     RowBox[{"mzs", " ", "sigma0"}]}], ")"}], " ", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"dv", "+", "v0"}], ")"}], "2"]}], "+", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{"v", "-", "v0"}], ")"}], " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", "1.`"}], " ", 
+      RowBox[{"(", 
+       RowBox[{"alpha", "-", "alpha0"}], ")"}], " ", "mza", " ", "q", " ", 
+      RowBox[{"(", 
+       RowBox[{"dv", "+", "v0"}], ")"}]}], "-", 
+     RowBox[{"1.`", " ", "mzs", " ", "q", " ", 
+      RowBox[{"(", 
+       RowBox[{"sigma", "-", "sigma0"}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{"dv", "+", "v0"}], ")"}]}], "-", 
+     RowBox[{"1.`", " ", "q", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"alpha0", "+", "dalpha"}], ")"}], " ", "mza"}], "+", 
+        RowBox[{"mzs", " ", "sigma0"}]}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{"dv", "+", "v0"}], ")"}]}]}], ")"}]}]}]], "Output",
+ CellChangeTimes->{3.9240742656035976`*^9},
+ CellLabel->"Out[5]=",ExpressionUUID->"ba3d4bf8-fd8b-5445-af83-77e891298e3d"]
+}, Open  ]]
+},
+WindowSize->{1141.2, 568.8},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"14.0 for Microsoft Windows (64-bit) (December 12, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"a8aaa063-2700-364a-992f-83084c860d1f"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1506, 35, 64, "Input",ExpressionUUID->"d6c30c76-cc9b-6d41-8080-0ceff8a629a2"],
+Cell[2089, 59, 10458, 228, 100, "Output",ExpressionUUID->"fdcea973-b095-c54d-ae93-4b44ac88b0e7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12584, 292, 159, 3, 43, "Input",ExpressionUUID->"1b996910-e921-a94c-aa54-12b258d64c85"],
+Cell[12746, 297, 2528, 79, 78, "Output",ExpressionUUID->"bde2eb95-35f5-8144-8331-cde382457872"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15311, 381, 1261, 32, 64, "Input",ExpressionUUID->"c7b2eea1-0ceb-7845-bf04-7206b2a9d6b5"],
+Cell[16575, 415, 14979, 324, 287, "Output",ExpressionUUID->"0381458b-5f5e-f540-b105-f3211d0872d9"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[31591, 744, 159, 3, 43, "Input",ExpressionUUID->"23bc6580-d55c-3e4a-aa00-5311a3d1c034"],
+Cell[31753, 749, 3664, 117, 172, "Output",ExpressionUUID->"9222e4af-06c4-ab4d-afe9-3e24b6d05c58"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[35454, 871, 895, 23, 43, "Input",ExpressionUUID->"5703297a-1b60-7446-9d9b-c8cf24a9edff"],
+Cell[36352, 896, 6527, 149, 100, "Output",ExpressionUUID->"6a613b9d-7b3f-4f49-9043-67c01117fa05"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[42916, 1050, 159, 3, 43, "Input",ExpressionUUID->"6a85f126-dd0c-914a-9e75-c1c89c4b58ca"],
+Cell[43078, 1055, 1712, 51, 75, "Output",ExpressionUUID->"ba3d4bf8-fd8b-5445-af83-77e891298e3d"]
+}, Open  ]]
+}
+]
+*)
+
